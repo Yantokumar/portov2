@@ -14,7 +14,7 @@ const { target, isVisible } = useAnimateOnScroll()
       </p>
     </div>
     
-    <div class="w-48 h-48 rounded-full bg-slate-800 border-2 border-emerald-500 overflow-hidden flex items-center justify-center">
+    <div class="w-48 h-48 rounded-full bg-slate-800 border-2 border-emerald-500 overflow-hidden flex items-center justify-center shadow-xl shadow-emerald-500/20">
       <img 
         src="../assets/hero.png" 
         loading="lazy"

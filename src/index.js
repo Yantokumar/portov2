@@ -17,8 +17,8 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Kisah Kita",
-    description: "Website statis romantis dan interaktif yang didedikasikan khusus untuk mendokumentasikan momen kebersamaan dengan pasangan.",
+    title: "lorem ipsum",
+    description: "lorem ipsum dolor sit amet.",
     tech: ["HTML", "CSS", "JavaScript"],
     github: "#",
     demo: "#"

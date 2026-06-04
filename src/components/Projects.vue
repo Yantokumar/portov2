@@ -17,10 +17,10 @@ const { target, isVisible } = useAnimateOnScroll()
       <div 
         v-for="project in projects" 
         :key="project.id" 
-        class="bg-slate-800/50 border border-slate-800 rounded-xl p-5 flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/5 transition duration-300"
+        class="bg-slate-800/50 border border-slate-800 rounded-xl p-5 flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 hover:-translate-y-2 group"
       >
         <div class="space-y-3">
-          <h3 class="text-xl font-bold text-slate-100 group-hover:text-emerald-400">
+          <h3 class="text-xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors">
             {{ project.title }}
           </h3>
           <p class="text-sm text-slate-400 leading-relaxed">
@@ -39,7 +39,7 @@ const { target, isVisible } = useAnimateOnScroll()
             </span>
           </div>
 
-          <div class="flex items-center gap-4 text-sm pt-2 border-t border-slate-800/60">
+          <div class="flex items-center gap-4 text-sm pt-4 border-t border-slate-800/60">
             <a 
               :href="project.github" 
               target="_blank" 
