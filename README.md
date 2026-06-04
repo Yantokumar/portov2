@@ -10,7 +10,7 @@ Website portofolio personal yang didesain untuk memperkenalkan diri, memamerkan 
 
 ## 🌐 Live Demo
 Kamu dapat melihat versi live dari website portofolio ini di sini:  
-🔗 **[Tautan Website Portofoliomu, misal: bahrudin.github.io/portov2](https://github.com)** *(Ganti dengan link hostingmu nanti)*
+🔗 **[Tautan Website Portofoliomu, misal: bahrudin.github.io/portov2](https://github.com)**
 
 ---
 
