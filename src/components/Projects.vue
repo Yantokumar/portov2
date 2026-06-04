@@ -1,34 +1,12 @@
 <script setup>
-const projects = [
-  {
-    id: 1,
-    title: "AnimeLib",
-    description: "Aplikasi pustaka anime personal terinspirasi dari MyAnimeList untuk melacak anime favorit, riwayat menonton, dan rekomendasi.",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/username/animelib",
-    demo: "#"
-  },
-  {
-    id: 2,
-    title: "Discord Bot (Economy & Mini-Games)",
-    description: "Bot Discord interaktif yang dilengkapi dengan fitur virtual economy, sistem toko (shop), dan mini-game tebak-tebakan menggunakan Python.",
-    tech: ["Python", "discord.py"],
-    github: "https://github.com/username/discord-bot",
-    demo: "#"
-  },
-  {
-    id: 3,
-    title: "Kisah Kita",
-    description: "Website statis romantis dan interaktif yang didedikasikan khusus untuk mendokumentasikan momen kebersamaan dengan pasangan.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "#",
-    demo: "#"
-  }
-]
+import { projects } from '../index.js'
+import { useAnimateOnScroll } from '../useAnimateOnScroll'
+
+const { target, isVisible } = useAnimateOnScroll()
 </script>
 
 <template>
-  <section id="projects" class="space-y-6 scroll-mt-20">
+  <section ref="target" id="projects" class="space-y-6 scroll-mt-24 transition-all duration-1000 transform" :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'">
     <div class="border-b border-slate-800 pb-2">
       <h2 class="text-3xl font-bold text-emerald-400">My Projects</h2>
       <p class="text-sm text-slate-400 mt-1">Beberapa proyek yang telah dan sedang saya kembangkan selama belajar pemrograman.</p>

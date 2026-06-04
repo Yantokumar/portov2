@@ -4,6 +4,7 @@
       <div class="font-bold text-xl text-emerald-400">Zhyusff.dev</div>
       <div class="space-x-4 text-sm text-slate-400">
         <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#skills" class="hover:text-white transition">Skills</a>
         <a href="#projects" class="hover:text-white transition">Projects</a>
         <a href="#contact" class="hover:text-white transition">Contact</a>
       </div>

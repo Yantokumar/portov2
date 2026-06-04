@@ -21,3 +21,9 @@ import Navbar from './components/Navbar.vue';
     <Contact />
   </div>
 </template>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>

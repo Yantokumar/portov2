@@ -1,28 +1,12 @@
 <script setup>
-const contacts = [
-  {
-    name: "GitHub",
-    icon: "💻",
-    url: "https://github.com/username-kamu",
-    color: "hover:bg-slate-800 hover:text-white hover:border-slate-700"
-  },
-  {
-    name: "Email",
-    icon: "✉️",
-    url: "mailto:email-kamu@gmail.com",
-    color: "hover:bg-emerald-500/10 hover:text-emerald-400 hover:border-emerald-500/30"
-  },
-  {
-    name: "LinkedIn",
-    icon: "👔",
-    url: "https://linkedin.com/in/username-kamu",
-    color: "hover:bg-blue-600/10 hover:text-blue-400 hover:border-blue-500/30"
-  }
-]
+import { contacts } from '../index.js'
+import { useAnimateOnScroll } from '../useAnimateOnScroll'
+
+const { target, isVisible } = useAnimateOnScroll()
 </script>
 
 <template>
-  <section id="contact" class="py-16 border-t border-slate-800/60 mt-20 text-center space-y-8">
+  <section ref="target" id="contact" class="py-16 border-t border-slate-800/60 mt-20 text-center space-y-8 scroll-mt-24 transition-all duration-1000 transform" :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'">
     <div class="max-w-xl mx-auto space-y-3">
       <h2 class="text-3xl font-bold text-emerald-400">Mari Terkoneksi!</h2>
       <p class="text-slate-400 leading-relaxed">
